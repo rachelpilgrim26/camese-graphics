@@ -1,16 +1,3 @@
-const form = document.getElementById("contactForm");
-const thankYouMessage = document.getElementById("thankYouMessage");
-
-form.addEventListener("submit", function (event) {
-  event.preventDefault(); // prevent page reload
-
-  // Show thank you message
-  thankYouMessage.style.display = "block";
-
-  // Clear form
-  form.reset();
-});
-
 // Smooth scroll and auto-fill message when "Order Now" is clicked
 const orderButtons = document.querySelectorAll(".order-btn");
 const messageBox = document.querySelector('textarea[name="message"]');

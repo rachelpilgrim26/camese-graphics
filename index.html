@@ -84,10 +84,22 @@
       </div>
     </div>
 
+    <h1>Graphics by Camese - Shirt Collection</h1>
+
     <div class="contact">
       <h2>Contact Us / Place an Order</h2>
       <p>Phone: 404-447-7866</p>
-      <form id="contactForm">
+      <form
+        action="https://formsubmit.co/graphics.by.camese@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://your-website-url.com/thank-you.html"
+        />
+
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea
@@ -96,13 +108,12 @@
           placeholder="Which shirts & sizes are you interested in?"
           required
         ></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit">Send Email</button>
       </form>
       <p id="thankYouMessage">Thank you! We will contact you soon.</p>
     </div>
 
     <footer>&copy; 2025 Graphics by Camese. All rights reserved.</footer>
-
     <script src="js/api.js"></script>
   </body>
 </html>
